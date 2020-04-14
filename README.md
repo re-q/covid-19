@@ -1,1 +1,1 @@
-# covid-19.github.io
+# covid-19
