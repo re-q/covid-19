@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja" >
   <head>
-    <title>Starter Template for Bootstrap · Bootstrap</title>
+    <title>COVID-19 新型コロナウイルス感染状況</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="index.css" rel="stylesheet">
   </head>
@@ -41,7 +41,7 @@
       </li>
       <li class="nav-item">
           <li class="nav-item">
-            <a class="nav-link" href="https://youtube.com/" target="_blank">
+            <a class="nav-link" href="https://www.youtube.com/channel/UCBXjqHBqrc5dpRVXP97E2GA" target="_blank">
               <span data-feather="youtube"></span>
               Youtube
             </a>
@@ -64,10 +64,10 @@
 	<div class="col">
 
 <div class="card mb-3">
-  <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="casedensmap20200326.png" />
+  <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_active_perpop.png" />
   <div class="card-body">
     <h5 class="card-title">感染状況マップ</h5>
-    <p class="card-text">人口に対してのアクティブケース※の割合です。</p>
+    <p class="card-text">現在の患者数（アクティブケース※）が、その国の人口に対してどれくらい多いかを表しています。世界の中でどのエリア・国の感染者が多いのかが分かります。退院した人や、死亡してしまった人は含まれません。赤が濃く暗くなるほど多いことを表しています。数値は人口10万人当たりの、アクティブケース数です。</p>
     <p class="card-text"><small class="text-muted">（※）アクティブケース ＝ 感染者数 － 退院者数 － 死亡者数</small></p>
   </div>
 </div>
@@ -79,11 +79,10 @@
 	<div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
 
 <div class="card mb-3">
-  <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="caseTotalLog_Japan.png" />
+  <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_from10cases.png" />
   <div class="card-body">
-    <h5 class="card-title">累積感染者数</h5>
-    <p class="card-text">人口に対してのアクティブケース※の割合です。</p>
-    <p class="card-text"><small class="text-muted">（※）アクティブケース ＝ 感染者数 － 退院者数 － 死亡者数</small></p>
+    <h5 class="card-title">日本の累積感染者数</h5>
+    <p class="card-text">上位15都道府県の累積感染者数の推移です。感染者数が10名を超えた日からの日数が横軸です。傾きが急なほど、急速に感染が拡大していることが分かります。</p>
   </div>
 </div>
 
@@ -91,11 +90,11 @@
 	<div class="col col-lg-6 col-md-12">
 
 <div class="card mb-3">
-  <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="daysForDboubleCase_Japan.png" />
+  <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_loglog_anim.gif" />
   <div class="card-body">
-    <h5 class="card-title">累積感染者数が2倍になった日数</h5>
-    <p class="card-text">人口に対してのアクティブケース※の割合です。</p>
-    <p class="card-text"><small class="text-muted">（※）アクティブケース ＝ 感染者数 － 退院者数 － 死亡者数</small></p>
+    <h5 class="card-title">日本の感染終息状況</h5>
+    <p class="card-text">緊急事態宣言が出された7都府県の感染終息状況のグラフです。ネットで話題になったものです。横軸が総感染者数、縦軸が新規感染者数です。感染が終息（新規感染者がゼロに近づく）してくると、グラフが滝のように下に流れていきます。</p>
+    <p class="card-text"><small class="text-muted"><a href="https://aatishb.com/covidtrends/" target="_blank">オリジナルはこちら</a></small></p>
   </div>
 </div>
 
@@ -105,13 +104,284 @@
 	</div>
 
 	<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-<h2>都道府県別感染状況</h2>
+<h1 class="display-5">都道府県別 感染状況</h1>
+
+<h2>東京都</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_tclog_TOKYO.png" />
+   <div class="card-body"><h5 class="card-title">累積感染者数</h5><p class="card-text">累積の感染者数です。退院や死亡も含みます。縦軸対数で、傾きが緩やかになるほど感染が終息に向かっていることを意味しています。</p></div>
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_doublecase_TOKYO.png" />
+   <div class="card-body"><h5 class="card-title">累積感染者数が2倍になる日数</h5><p class="card-text">感染者の過去7日間の増加数から、感染者数が2倍になる日数を逆算しています。数値が増えるほど、感染が終息に向かっていることを意味しています。</p></div>
+  </div>
+ </div>
+</div>
+
+<h2>神奈川県</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_tclog_KANAGAWA.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_doublecase_KANAGAWA.png" />
+  </div>
+ </div>
+</div>
+
+<h2>埼玉県</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_tclog_SAITAMA.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_doublecase_SAITAMA.png" />
+  </div>
+ </div>
+</div>
+
+<h2>千葉県</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_tclog_CHIBA.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_doublecase_CHIBA.png" />
+  </div>
+ </div>
+</div>
+
+<h2>大阪府</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_tclog_OSAKA.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_doublecase_OSAKA.png" />
+  </div>
+ </div>
+</div>
+
+<h2>兵庫県</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_tclog_HYOGO.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_doublecase_HYOGO.png" />
+  </div>
+ </div>
+</div>
+
+<h2>福岡県</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_tclog_FUKUOKA.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_doublecase_FUKUOKA.png" />
+  </div>
+ </div>
+</div>
+
+<h2>愛知県</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_tclog_AICHI.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_doublecase_AICHI.png" />
+  </div>
+ </div>
+</div>
+
+<h2>北海道</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_tclog_HOKKAIDO.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_doublecase_HOKKAIDO.png" />
+  </div>
+ </div>
+</div>
+
+<h2>京都府</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_tclog_KYOTO.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/japan_doublecase_KYOTO.png" />
+  </div>
+ </div>
+</div>
+
+
 	</div>
 
 	<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-<h2>国別感染状況</h2>
-	</div>
+<h1 class="display-5">国別 感染状況</h1>
+
+<h2>アメリカ</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_tclog_USA.png" />
+   <div class="card-body"><h5 class="card-title">累積感染者数</h5><p class="card-text">累積の感染者数です。退院や死亡も含みます。縦軸対数で、傾きが緩やかになるほど感染が終息に向かっていることを意味しています。</p></div>
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_doublecase_USA.png" />
+   <div class="card-body"><h5 class="card-title">累積感染者数が2倍になる日数</h5><p class="card-text">感染者の過去7日間の増加数から、感染者数が2倍になる日数を逆算しています。数値が増えるほど、感染が終息に向かっていることを意味しています。</p></div>
+  </div>
+ </div>
 </div>
+
+<h2>イタリア</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_tclog_Italy.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_doublecase_Italy.png" />
+  </div>
+ </div>
+</div>
+
+<h2>スペイン</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_tclog_Spain.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_doublecase_Spain.png" />
+  </div>
+ </div>
+</div>
+
+<h2>ドイツ</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_tclog_Germany.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_doublecase_Germany.png" />
+  </div>
+ </div>
+</div>
+
+<h2>フランス</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_tclog_France.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_doublecase_France.png" />
+  </div>
+ </div>
+</div>
+
+<h2>イギリス</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_tclog_UK.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_doublecase_UK.png" />
+  </div>
+ </div>
+</div>
+
+<h2>中国</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_tclog_China.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_doublecase_China.png" />
+  </div>
+ </div>
+</div>
+
+<h2>韓国</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_tclog_SouthKorea.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_doublecase_SouthKorea.png" />
+  </div>
+ </div>
+</div>
+
+<h2>日本</h2>
+<div class="row">
+ <div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_tclog_Japan.png" />
+  </div>
+ </div>
+ <div class="col col-lg-6 col-md-12">
+  <div class="card mb-3">
+   <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="img/world_doublecase_Japan.png" />
+  </div>
+ </div>
+</div>
+
 
     </main>
 
