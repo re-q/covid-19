@@ -1,5 +1,129 @@
-<html>
-<body>
-<img src="img/caseTotalLog_USA.png">
-</body>
+<!doctype html>
+<html lang="ja" >
+  <head>
+    <title>Starter Template for Bootstrap · Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body >
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+  <div class="container">
+    <span class="skiplink-text">Skip to main content</span>
+  </div>
+</a>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="nav navbar-nav mr-auto" id="myTab">
+      <li class="nav-item">
+            <a class="nav-link active" d="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+              <span data-feather="home"></span>
+              Home <span class="sr-only">(current)</span>
+            </a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+              <span data-feather="bar-chart"></span>
+              都道府県別
+            </a>
+      </li>
+      <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+              <span data-feather="bar-chart"></span>
+              国別
+            </a>
+          </li>
+      </li>
+      <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="https://youtube.com/" target="_blank">
+              <span data-feather="youtube"></span>
+              Youtube
+            </a>
+          </li>
+      </li>
+    </ul>
+    <div class="text-light">更新：2020/04/14</div>
+  </div>
+</nav>
+
+    <main role="main" class="px-4">
+
+<div class="tab-content" id="myTabContent">
+	<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+<h1 class="display-5">新型コロナウイルス感染状況</h1>
+<br>
+
+<div class="row">
+	<div class="col">
+
+<div class="card mb-3">
+  <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="casedensmap20200326.png" />
+  <div class="card-body">
+    <h5 class="card-title">感染状況マップ</h5>
+    <p class="card-text">人口に対してのアクティブケース※の割合です。</p>
+    <p class="card-text"><small class="text-muted">（※）アクティブケース ＝ 感染者数 － 退院者数 － 死亡者数</small></p>
+  </div>
+</div>
+
+	</div>
+</div>
+
+<div class="row">
+	<div class="col col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+
+<div class="card mb-3">
+  <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="caseTotalLog_Japan.png" />
+  <div class="card-body">
+    <h5 class="card-title">累積感染者数</h5>
+    <p class="card-text">人口に対してのアクティブケース※の割合です。</p>
+    <p class="card-text"><small class="text-muted">（※）アクティブケース ＝ 感染者数 － 退院者数 － 死亡者数</small></p>
+  </div>
+</div>
+
+	</div>
+	<div class="col col-lg-6 col-md-12">
+
+<div class="card mb-3">
+  <img class="bd-placeholder-img figure-img img-fluid rounded" focusable="false" role="img" src="daysForDboubleCase_Japan.png" />
+  <div class="card-body">
+    <h5 class="card-title">累積感染者数が2倍になった日数</h5>
+    <p class="card-text">人口に対してのアクティブケース※の割合です。</p>
+    <p class="card-text"><small class="text-muted">（※）アクティブケース ＝ 感染者数 － 退院者数 － 死亡者数</small></p>
+  </div>
+</div>
+
+	</div>
+</div>
+
+	</div>
+
+	<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+<h2>都道府県別感染状況</h2>
+	</div>
+
+	<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+<h2>国別感染状況</h2>
+	</div>
+</div>
+
+    </main>
+
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+  feather.replace()
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
 </html>
